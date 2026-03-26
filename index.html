@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="src/css/alumno-a.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Tablero de Tareas</h1>
+    <button id="btnNuevaTarea">+ Nueva Tarea</button>
+  </header>
+
+  <main class="board">
+    <div class="column" id="pendiente">
+      <h2>Pendiente</h2>
+      <div class="task-container"></div>
+    </div>
+
+    <div class="column" id="progreso">
+      <h2>En progreso</h2>
+      <div class="task-container"></div>
+    </div>
+
+    <div class="column" id="hecho">
+      <h2>Hecho</h2>
+      <div class="task-container"></div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Nueva Tarea</h2>
+
+      <form id="taskForm">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+        <div class="modal-buttons">
+          <button type="submit">Guardar</button>
+          <button type="button" id="cerrarModal">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="src/js/alumno-a/ui.render.js"></script>
+  <script src="src/js/alumno-a/ui.modal.js"></script>
+</body>
+</html>
