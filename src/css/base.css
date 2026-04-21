@@ -221,3 +221,12 @@ body {
     flex-direction: column;
   }
 }
+
+.empty-state {
+  padding: 16px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--color-secondary);
+  background-color: #f9fafb;
+}
